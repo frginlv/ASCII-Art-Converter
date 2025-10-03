@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Converter Tool</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+ <body>
+
+  <h1> ASCII Converter Tool To Convert Any Image Into <br> ASCII ART  </h1>
+  <div class="Images">
+    <img src="{{ url_for('static', filename='imagess/allo.png')}}" alt="">
+    <h3 id="browser">browser be like : <br> Yo Flask, this user want to turn this image into ascii art </h3>
+    <img src="{{ url_for('static', filename='imagess/emoticon.png')}}" alt=" ">
+    <h3 id="Flask"> Flask : <br> I GOTCHUU BRO, Click On Convert Already man!</h3>
+  </div>
+  
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file-upload" class="custom-file-upload">Browse</label>
+    <input id="file-upload"  type="file" value="Convert" name="image" accept="image/*" required>
+    <span id="file-name">No File Chosen</span>
+    <button type="submit">Convert</button> 
+  </form>  
+
+  <footer>
+  &copy; made by frginlv <br>
+  <a href="https://github.com/frginlv">GitHub</a>
+  </footer>
+
+  <script>
+  const fileInput = document.getElementById("file-upload");
+  const fileName = document.getElementById("file-name");
+
+    fileInput.addEventListener("change", () => {
+        fileName.textContent = fileInput.files.length > 0
+            ? fileInput.files[0].name
+            : "No File Chosen";       
+    });
+  </script>
+
+ </body>
+
+</html>

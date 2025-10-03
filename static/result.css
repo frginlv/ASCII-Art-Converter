@@ -1,0 +1,46 @@
+body { 
+background-color:#C07B59;
+text-align: center;
+}
+
+.another_one{
+text-decoration: none;
+color: yellowgreen;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+margin-top: 10px;
+transition: all 0.3s ease; /*this is for th eanimation*/
+border-radius: 10px;
+font-size: 16px;
+}
+
+.another_one:hover {
+transform: scale(1.1);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+color: olive;
+background-color: goldenrod;
+}
+
+img {
+position: absolute;
+left: -60;
+bottom: 0;
+pointer-events: none;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left:50%;
+    transform: translate(-50%);
+    color: black;
+}
+   
+a {
+    color: rgb(51, 51, 51);
+    text-decoration: underline;
+    padding: 120px 0;
+    margin-top:  auto;
+}

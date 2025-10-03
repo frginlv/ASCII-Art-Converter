@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here You Go <3 </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='result.css')}}">
+</head>
+<body>
+<h1>ASCII Result</h1>
+<pre style="font-size:8px; line-height:8px;">{{ascii_art|e }}</pre> 
+<br>
+<h2> Fun Fact : Close Your Eyes By 70% To Be Able To See It Clearly :) </h2>
+<a href="/" class="another_one">Upload Another Image</a> 
+
+<footer>
+  &copy; made by frginlv <br>
+  <a href="https://github.com/frginlv">GitHub</a>
+</footer>
+
+<img src="{{ url_for('static', filename='imagess/peek.png')}}" alt="">
+
+</body>
+</html>
